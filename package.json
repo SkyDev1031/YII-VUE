@@ -1,0 +1,48 @@
+{
+  "name": "pingcrm-yii2",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">     <a href=\"https://github.com/yiisoft\" target=\"_blank\">         <img src=\"https://avatars0.githubusercontent.com/u/993323\" height=\"100px\">     </a>     <h1 align=\"center\">Yii 2 Basic Project Template</h1>     <br> </p>",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.config.js --watch --mode development",
+    "prod": "webpack --config webpack.config.js --optimization-minimize --mode production",
+    "css-dev": "cross-env NODE_ENV=development postcss resources/css/app.css -o web/assets/inertia/css/app.css",
+    "css-prod": "cross-env NODE_ENV=development postcss resources/css/app.css -o web/assets/inertia/css/app.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbreuss/pingcrm-yii2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbreuss/pingcrm-yii2/issues"
+  },
+  "homepage": "https://github.com/tbreuss/pingcrm-yii2#readme",
+  "dependencies": {
+    "@inertiajs/vue3": "^1.2.0",
+    "@popperjs/core": "^2.11.8",
+    "lodash": "^4.17.21",    
+    "tailwindcss": "^3.4.4",
+    "uuid": "^10.0.0",
+    "vue": "^3.2.27"    
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.2",
+    "css-loader": "^7.1.2",
+    "cssnano": "^7.0.4",    
+    "postcss-cli": "11.0",
+    "postcss-import": "^16.1.0",
+    "style-loader": "^4.0.0",
+    "vue-loader": "^17.4.2",
+    "vue-style-loader": "^4.1.2",    
+    "webpack": "5.93",
+    "webpack-cli": "^5.1.4"
+  }
+}
